@@ -1,5 +1,7 @@
 // Author: Brendan
 
+// Chatgpt and gitHub co-pilot were used to help write this code, comment, debug, and refactor
+
 // Constants for styling
 const COLORS = '0123456789ABCDEF'; // Possible colors for buttons
 const BUTTON_WIDTH = '10em'; // Width of buttons
@@ -102,7 +104,7 @@ class Game {
       this.buttons[i].isClickable = false; // make the buttons not clickable
       this.showOrder(this.buttons[i]); // show the order of the buttons
       this.buttons[i].btn.style.position = 'static'; // set the position of the button to static
-      this.buttons[i].setStyles(this.buttons[i].orgTop, this.buttons[i].orgLeft); // set the top and left position of the button
+      this.buttons[i].setPOS(this.buttons[i].orgTop, this.buttons[i].orgLeft); // set the top and left position of the button
     }
 
     // Add the heading and reset button to the document body
